@@ -1,0 +1,9 @@
+#!/bin/bash 
+
+#This is a script to automatically run the program
+
+#Find where php is 
+PHP=`which php`  
+
+#run index.php file 
+$PHP /usr/share/info6005-cw1-sk11g08/index.php $@

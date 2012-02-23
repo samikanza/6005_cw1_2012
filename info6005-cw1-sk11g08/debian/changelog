@@ -1,5 +1,12 @@
+info6005-cw1-sk11g08 (0.1-2) unstable; urgency=low
+
+  * Added binary file to run from command line
+  * Added man page
+
+ -- sk11g08 <sk11g08@ecs.soton.ac.uk>  Thu, 23 Feb 2012 19:05:00 +0000
+
 info6005-cw1-sk11g08 (0.1-1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release 
 
  -- sk11g08 <sk11g08@ecs.soton.ac.uk>  Tue, 21 Feb 2012 16:00:57 +0000

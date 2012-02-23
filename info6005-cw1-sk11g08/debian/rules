@@ -7,12 +7,14 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+script = $(CURDIR)/info6005-cw1-sk11g08
 feeds = $(CURDIR)/feeds.conf
 index = $(CURDIR)/index.php
 rss = $(CURDIR)/rss_php.php
 
 DEST1 = $(CURDIR)/debian/info6005-cw1-sk11g08/usr/share/info6005-cw1-sk11g08
 DEST2 = $(CURDIR)/debian/info6005-cw1-sk11g08/etc/info6005-cw1-sk11g08
+DEST3 = $(CURDIR)/debian/info6005-cw1-sk11g08/usr/bin
 
 build: build-stamp
 build-stamp:
@@ -25,7 +27,7 @@ clean:
 	rm -f build-stamp
 	dh_clean
 
-install: build clean $(feeds) $(index) $(rss) 
+install: build clean $(script) $(feeds) $(index) $(rss) 
 	dh_testdir
 	dh_testroot
 	dh_prep
@@ -33,7 +35,9 @@ install: build clean $(feeds) $(index) $(rss)
 
 	mkdir -m 755 -p $(DEST1)
 	mkdir -m 755 -p $(DEST2)
+	mkdir -m 755 -p $(DEST3)
 
+	install -m 644 $(script) $(DEST3)
 	install -m 644 $(feeds) $(DEST2)
 	install -m 777 $(index) $(DEST1)
 	install -m 777 $(rss)   $(DEST1)
@@ -70,9 +74,8 @@ binary-indep: build install
 	dh_md5sums
 	dh_builddeb
 
-# Build architecture-dependent files here.
+# Build architecture-dependant files here
 binary-arch: build install
-# We have nothing to do by default.
 
 binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary install
