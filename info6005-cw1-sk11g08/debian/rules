@@ -37,10 +37,10 @@ install: build clean $(script) $(feeds) $(index) $(rss)
 	mkdir -m 755 -p $(DEST2)
 	mkdir -m 755 -p $(DEST3)
 
-	install -m 644 $(script) $(DEST3)
+	install -m 755 $(script) $(DEST3)
 	install -m 644 $(feeds) $(DEST2)
-	install -m 777 $(index) $(DEST1)
-	install -m 777 $(rss)   $(DEST1)
+	install -m 644 $(index) $(DEST1)
+	install -m 644 $(rss)   $(DEST1)
 
 # Build architecture-independent files here.
 binary-indep: build install
