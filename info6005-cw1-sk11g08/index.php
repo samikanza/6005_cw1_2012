@@ -46,7 +46,7 @@
 
 	# Read config from file
 	if (@!$config) {
-		$config_file = 'feeds.conf';
+		$config_file = '/etc/info6005-cw1-sk11g08/feeds.conf';
 		if (file_exists($config_file)) {
 			$config = conf_from_file($config_file);
 		}

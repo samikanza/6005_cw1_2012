@@ -5,19 +5,21 @@
 .SH NAME
 6005_CW1_2012 \- PHP RSS Reader for INFO6005
 .SH SYNOPSIS
-.B php index.php 
+.B info6005-cw1-sk11g08 [--feeds feed1[,feed2,...] --items n] 
 .SH DESCRIPTION
 .PP 
-This library can either read from a config file, or from stdin.
+This software displays a defined number of RSS elements from specified RSS feeds
 .SH OPTIONS
 .PP
-To run from stdin:
+.IP "\-\-feeds feed1[,feed2,...]"
+list of URI's to read from
 .PP
-\-\- feeds feed1, feed2, feed3 (list of URI's to read from)
-.PP
-\-\- items n (n = number of items to read)
-.PP
-To customise your config file go to (usr/etc/info6005-cw1-sk11g08/feeds.conf)
+.IP "\-\-items n" 
+number of items to read
+
+.SH FILES
+.I /etc/info6005-cw1-sk11g08/feeds.conf
+Global feed configuration file
 
 .SH BUGS
 No known bugs
@@ -25,3 +27,5 @@ No known bugs
 .SH AUTHOR
 .B Samantha Kanza (sk11g08@ecs.soton.ac.uk)
 
+.SH SEE ALSO
+.I https://github.com/samikanza/6005_cw1_2012

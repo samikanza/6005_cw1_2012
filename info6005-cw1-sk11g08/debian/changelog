@@ -1,9 +1,16 @@
+info6005-cw1-sk11g08 (0.1-3) unstable; urgency=low
+
+  * Updated man page to describe how to run from command line, added see also section and edited options section
+  * Updated index.php to point to the correct feeds.conf file 
+
+ -- sk11g08 <sk11g08@ecs.soton.ac.uk>  Thu, 23 Feb 2012 19:53:12 +0000
+
 info6005-cw1-sk11g08 (0.1-2) unstable; urgency=low
 
   * Added binary file to run from command line
   * Added man page
 
- -- sk11g08 <sk11g08@ecs.soton.ac.uk>  Thu, 23 Feb 2012 19:05:00 +0000
+ -- sk11g08 <sk11g08@ecs.soton.ac.uk>  Thu, 23 Feb 2012 19:05:07 +0000
 
 info6005-cw1-sk11g08 (0.1-1) unstable; urgency=low
 
