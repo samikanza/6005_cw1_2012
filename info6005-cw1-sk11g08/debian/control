@@ -10,6 +10,6 @@ Homepage: http://github.com/info6005/6005_cw1_2012
 
 Package: info6005-cw1-sk11g08
 Architecture: all
-Depends: ${misc:Depends}, php5
+Depends: ${misc:Depends}, php5-cli
 Description: PHP RSS Reader
  This software is part of a coursework for INFO6005 Students.
