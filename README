@@ -1,3 +1,25 @@
-ReadMe
+README
 
-Temp Read File 
+DETAILS
+Author: 	Samantha Kanza
+Email: 		sk11g08@ecs.soton.ac.uk
+Coursework: 	INFO6005
+
+This Coursework was to package the INFO6005 PHP RSS Reader for distribution.
+
+OPTIONS
+       --feeds feed1[,feed2,...]
+              list of URI's to read from
+
+       --items n
+              number of items to read
+
+FILES
+       feeds.conf Global feed configuration file
+
+REPACKAGE COMMAND
+within the info6005-cw1-sk11g08 folder:
+fakeroot dpkg-buildpackage -A
+
+within the root folder:
+lintian info6005-
